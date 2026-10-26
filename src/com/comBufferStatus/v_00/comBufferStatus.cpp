@@ -69,6 +69,10 @@ namespace fw2 { namespace fnct { namespace core	{
         g_state = k_state_t::free;
     }
 
+    bool        comBufferStatus_t::getBufferStatusFree      (void)  {
+        return (k_state_t::free == g_state);
+    }
+
 
     // **************************
     // receiver

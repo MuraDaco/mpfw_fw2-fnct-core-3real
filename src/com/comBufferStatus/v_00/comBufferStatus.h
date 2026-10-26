@@ -60,6 +60,7 @@ class comBufferStatus_t: public comBufferInterface_t {
         uint16_t    getBufferLengthCleaned              (void)                                      override;
         uint8_t     getBufferFirstDirtyBytes            (void)                                      override;
         void        setBufferStatusFree                 (void)                                      override;
+        bool        getBufferStatusFree                 (void)                                      override;
 
         // receiver
         void        rx_interrupt_buffer_management      (void)                                      override;
